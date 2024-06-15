@@ -1,0 +1,232 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #002622;
+    color: wheat;
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #002622;
+    position: relative;
+    /* Para posicionar o menu dropdown */
+  }
+  
+  /* Estilo do logo */
+  .logo img {
+    height: 8vw;
+    min-height: 50px;
+    max-height: 100px;
+    transition: height 0.3s ease;
+  }
+  
+  /* Estilos do menu de navegação */
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+  }
+  
+  .menu-toggle {
+    display: none;
+    /* Escondido por padrão */
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: wheat;
+    cursor: pointer;
+  }
+  
+  nav li {
+    padding: 10px 20px;
+    /* Espaçamento ao redor dos textos */
+    text-decoration: none;
+  }
+  
+  .logo img {
+    height: 8vw;
+    max-height: 76px;
+  }
+  
+  
+  nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: wheat;
+  }
+  
+  .custom-link {
+    color: wheat;
+    /* Mantém a cor do texto pai */
+  }
+  
+  .custom-link:hover {
+    text-decoration: underline;
+    color: wheat;
+  }
+  
+  ol {
+    margin: 15px;
+  }
+  
+  .capa img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #002622;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .container {
+    margin-right: 20px;
+  }
+  
+  .section {
+    margin-bottom: 40px;
+  }
+  
+  h1 {
+    text-align: center;
+    color: wheat;
+    font-size: 26px;
+    margin: 20px 0;
+  }
+  
+  li {
+    font-size: 18px;
+    /* Tamanho da fonte dos itens de lista */
+  }
+  
+  p {
+    margin: 20px;
+    font-size: 18px;
+    /* Tamanho da fonte dos parágrafos */
+  }
+  
+  nav li a:hover {
+    background-color: #5a0707;
+  }
+  
+  .imagem {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .imagem img {
+    width: 280px;
+    /* Defina o mesmo valor para largura e altura */
+    height: 280px;
+    /* Defina o mesmo valor para largura e altura */
+    object-fit: cover;
+    /* Garante que a imagem mantenha a proporção e preencha o contêiner */
+    border-radius: 8px;
+    /* Adiciona borda arredondada para estilização */
+  }
+  
+  .capa img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: wheat;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.8em;
+    margin-top: 10px;
+  }
+  
+  .footer-link {
+    color: wheat;
+    text-decoration: none;
+    margin-left: 15px;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      padding: 10px 15px;
+      align-items: center;
+    }
+  
+    .menu-toggle {
+      display: block;
+      /* Mostrar o botão em telas menores */
+    }
+  
+    nav ul {
+      display: none;
+      flex-direction: column;
+      background-color: #002622;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 100%;
+    }
+  
+    /* Mostrar o menu quando o botão de menu hambúrguer estiver ativo */
+    nav ul.active {
+      display: flex;
+      height: 130vh;
+    }
+  
+    nav li {
+      text-align: center;
+      padding: 15px 0;
+    }
+  
+    .logo img {
+      height: 12vw;
+      min-height: 50px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo img {
+      height: 15vw;
+      min-height: 50px;
+    }
+  
+    .imagem {
+      justify-content: center;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .logo img {
+      height: 20vw;
+      min-height: 50px;
+    }
+  
+    .imagem {
+      justify-content: center;
+    }
+  }

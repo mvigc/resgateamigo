@@ -1,0 +1,212 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #002622;
+    color: wheat;
+  }
+  
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #002622;
+    position: relative;
+    /* Para posicionar o menu dropdown */
+  }
+  
+  /* Estilo do logo */
+  .logo img {
+    height: 8vw;
+    min-height: 50px;
+    max-height: 100px;
+    transition: height 0.3s ease;
+  }
+  
+  /* Estilos do menu de navegação */
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+  }
+  
+  .menu-toggle {
+    display: none;
+    /* Escondido por padrão */
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: wheat;
+    cursor: pointer;
+  }
+  
+  nav li {
+    padding: 10px 20px;
+    /* Espaçamento ao redor dos textos */
+    text-decoration: none;
+  }
+  
+  
+  #inicio {
+    color: wheat;
+  }
+  
+  #quemsomos {
+    color: wheat;
+  }
+  
+  #adote {
+    color: wheat;
+  }
+  
+  #doe {
+    color: wheat;
+  }
+  
+  #dicas {
+    color: wheat;
+  }
+  
+  #contato {
+    color: wheat;
+  }
+  
+  
+  nav a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .capa img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .form-space {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+    border-radius: 10px;
+  }
+  
+  /* Responsividade para o iframe */
+  .form-space iframe {
+    width: 100%;
+    max-width: 640px;
+    height: 640px;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: wheat;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.8em;
+    height: 18px;
+  
+  }
+  
+  .footer-link {
+    color: wheat;
+    text-decoration: none;
+    margin-left: 15px;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* Media Queries */
+  /* Ajustes para telas menores */
+  @media (max-width: 768px) {
+    header {
+      padding: 10px 15px;
+      flex-direction: row;
+      /* Alinha os itens verticalmente */
+      align-items: center;
+      /* Centraliza os itens */
+    }
+  
+    .menu-toggle {
+      display: block;
+      /* Mostrar o botão em telas menores */
+    }
+  
+    nav ul {
+      display: none;
+      /* Esconder o menu padrão em telas menores */
+      flex-direction: column;
+      background-color: #002622;
+      /* Cor de fundo para o menu dropdown */
+      position: absolute;
+      /* Para que ele sobreponha o conteúdo */
+      top: 100%;
+      /* Coloca logo abaixo do cabeçalho */
+      right: 0;
+      width: 100%;
+      /* Ocupa toda a largura da tela */
+    }
+  
+    /* Mostrar o menu quando o botão de menu hambúrguer estiver ativo */
+    nav ul.active {
+      display: flex;
+      /* Mostrar o menu em forma de dropdown */
+      height: 140vh;
+    }
+  
+    nav li {
+      text-align: center;
+      padding: 15px 0;
+    }
+  
+  
+    .logo img {
+      height: 12vw;
+      /* Ajusta para 12% da largura da viewport */
+      min-height: 50px;
+      /* Altura mínima para a imagem */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .logo img {
+      height: 15vw;
+      /* Ajusta para 15% da largura da viewport */
+      min-height: 50px;
+      /* Altura mínima */
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .logo img {
+      height: 60px;
+    }
+  
+    nav ul {
+      width: 100%; /* O menu dropdown ocupa toda a largura */
+    }
+  
+    nav li {
+      padding: 10px 0;
+    }
+  }

@@ -1,0 +1,239 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #002622;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #002622;
+    position: relative;
+    /* Para posicionar o menu dropdown */
+  }
+  
+  /* Estilo do logo */
+  .logo img {
+    height: 8vw;
+    min-height: 50px;
+    max-height: 100px;
+    transition: height 0.3s ease;
+  }
+  
+  .menu-toggle {
+    display: none;
+    /* Escondido por padrão */
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: wheat;
+    cursor: pointer;
+  }
+  
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+  }
+  
+  nav li {
+    padding: 10px 20px;
+    /* Espaçamento ao redor dos textos */
+    text-decoration: none;
+  }
+  
+  a {
+    color: wheat;
+    /* Cor dos links */
+  }
+  
+  
+  
+  nav a {
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .capa img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 1300px;
+    /* Define uma largura máxima */
+    margin: 20px auto;
+    background-color: #002622;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 26px;
+    color: wheat;
+    text-align: center;
+  }
+  
+  p {
+    color: wheat;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+  
+  .section {
+    margin-top: 20px;
+    color: wheat;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  
+  #topicos {
+    font-size: 17.5px;
+    color: white;
+    background-color: #002622;
+    padding: 20px;
+    /* Espaçamento interno */
+    border: 2px solid #002622;
+    box-shadow: 10px 10px 20px rgba(0.5, 0.5, 0.5, 0.5);
+    /*sombra com desfoque*/
+    width: 240px;
+    height: 30px;
+    border-radius: 12px;
+    text-align: center;
+  }
+  
+  .section h2 {
+    background-color: #fba056;
+    color: white;
+    padding: 10px;
+    font-size: 20px;
+    margin: 0 -20px;
+    text-shadow: 2px 1px 1px 2px 0 #000;
+    /* Cor do contorno */
+    box-shadow: 10px 10px 20px rgba(0.5, 0.5, 0.5, 0.5);
+    border-radius: 10px;
+  }
+  
+  .section p {
+    padding: 10px;
+  }
+  
+  .Dicas {
+    text-align: center;
+    margin-top: auto;
+    /* Empurra a imagem para o final da página */
+    padding: 20px;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    /* Cor do contorno */
+  }
+  
+  .Dicas img {
+    max-width: 100%;
+    /* Define a largura máxima da imagem */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    width: auto;
+    /* Mantém a proporção da imagem */
+  }
+  
+  .footer {
+    background-color: #333;
+    color: wheat;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.8em;
+    height: 18px;
+  }
+  
+  .footer-link {
+    color: wheat;
+    text-decoration: none;
+    margin-left: 15px;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Media Queries */
+  
+  /* Ajustes para telas menores */
+  @media (max-width: 768px) {
+    .logo img {
+      height: 60px;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  
+    nav ul {
+      display: none;
+      flex-direction: column;
+      background-color: #002622;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      width: 100%;
+    }
+  
+    nav ul.active {
+      display: flex;
+      height: 500vh;
+    }
+  
+    nav li {
+      text-align: center;
+      padding: 15px 0;
+    }
+  
+    nav li {
+      width: 100%;
+      text-align: center;
+      padding: 8px 0;
+      gap: 15px;
+    }
+  }
+  
+  /* Ajustes para telas ainda menores */
+  @media (max-width: 480px) {
+    .container {
+      width: 90%;
+      /* Reduz a largura do container */
+      padding: 10px;
+      /* Reduz o espaçamento interno */
+    }
+  
+    .logo img {
+      height: 60px;
+    }
+  
+    nav ul {
+      width: 100%;
+      /* O menu dropdown ocupa toda a largura */
+    }
+  
+    nav li {
+      padding: 10px 0;
+    }
+  }
+  
+  /* Media query para telas maiores */
+  @media (min-width: 1200px) {
+    .Dicas img {
+      max-width: 80%;
+      /* Define uma largura máxima de 80% do contêiner pai */
+    }
+  }

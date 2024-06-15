@@ -1,0 +1,167 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #002622;
+    color: wheat;
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  /* MENU */
+  
+  header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #002622;
+      position: relative;
+  }
+  
+
+  
+  .logo img {
+      height: 8vw;
+      min-height: 50px;
+      max-height: 100px;
+      transition: height 0.3s ease;
+  }
+  
+  
+  nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+      font-size: 18px;
+  }
+  
+  nav li {
+      padding: 10px 20px;
+  }
+  
+  nav a {
+      text-decoration: none;
+      font-weight: bold;
+      color: wheat;
+  }
+  
+  nav a:hover {
+    color: #c7a78d;
+  }
+  
+  .container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 40px;
+}
+
+  
+  .menu-toggle {
+      display: none;
+      font-size: 24px;
+      background: none;
+      border: none;
+      color: wheat;
+      cursor: pointer;
+  }
+    .logo img {
+      height: 8vw;
+      min-height: 50px;
+      max-height: 100px;
+      transition: height 0.3s ease;
+    }
+    .capa img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  input[type="checkbox"] {
+    margin-top: 5px;
+  }
+  .castracao {
+    display: flex;
+  }
+  
+  .castracao input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  .castracao label {
+    margin-right: 20px;
+  }
+  
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  .footer {
+    background-color: #333;
+    color: wheat;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.8em;
+    margin-top: 80px;
+  }
+  
+  .footer-link {
+    color: wheat;
+    text-decoration: none;
+    margin-left: 15px;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  

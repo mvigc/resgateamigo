@@ -1,0 +1,378 @@
+/* styles.css */
+
+/* Estilos globais */
+html {
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #002622;
+    overflow-x: hidden;
+}
+
+/* INICIO HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #002622;
+    position: relative;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.logo img {
+    height: 8vw;
+    min-height: 50px;
+    max-height: 100px;
+    transition: height 0.3s ease;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+nav li {
+    padding: 10px 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: wheat;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: wheat;
+    cursor: pointer;
+}
+
+/* FIM HEADER */
+
+.capa img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    /* max-width: 1200px; */
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero-section {
+    text-align: left;
+    color: #f8f4dd;
+    width: 40%;
+    margin-left: 3rem;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    opacity: 0.8;
+}
+
+/* .text-overlay {
+    position: absolute;
+    top: 10%;
+    left: -22%;
+    transform: translateX(0);
+    max-width: 50%;
+    background-color: white;
+  } */
+
+.text-overlay h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.text-overlay p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.adopt-button {
+    background-color: #f5deb3;
+    color: #0c343d;
+    padding: 15px 30px;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 70px;
+    transition: background-color 0.3s ease;
+    width: 280px;
+    height: 80px;
+    border: solid;
+   
+}
+.adopt-button a{
+    text-decoration: none;
+    color: #0c343d;
+    
+   
+}
+
+
+.adopt-button:hover {
+    background-color: #d4b58e;
+}
+
+/* Centralização da Galeria e Itens */
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 120px;
+    position: relative;
+}
+
+.gallery-item {
+    position: relative;
+    width: 30%;
+    min-width: 300px;
+    margin-bottom: 20px;
+    max-width: 350px;
+}
+
+.gallery-item a{
+   text-decoration: none;
+   
+   
+}
+.gallery-image {
+    width: 100%;
+    height: 550px;
+    border-radius: 10px;
+    
+}
+
+.image-button {
+    
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fba056;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    width: 60%; /* Defina a largura em porcentagem */
+    font-size: 20px;
+    margin-top: -150px;
+    text-align: center; /* Centraliza o texto horizontalmente */
+    
+}
+
+.image-button:hover {
+    background-color: rgba(212, 181, 142, 0.9);
+}
+
+.footer {
+    background-color: #333;
+    color: wheat;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.8em;
+    margin-top: 10px;
+}
+
+.footer-link {
+    color: wheat;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* Estilos Responsivos */
+
+/* Telas médias (tablets e dispositivos móveis em paisagem) */
+@media (max-width: 768px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+
+
+    .text-overlay {
+        max-width: 90%;
+        top: 5%;
+        left: 5%;
+    }
+
+    .text-overlay h1 {
+        font-size: 2em;
+    }
+
+    .text-overlay p {
+        font-size: 1em;
+    }
+
+    .gallery {
+        gap: 100px;
+    }
+
+    .gallery-item {
+        width: 45%;
+        margin-bottom: 10px;
+        display: flex;
+    }
+
+    .gallery-image {
+        height: auto;
+    }
+
+    .image-button {
+        width: 40%; /* Defina uma largura menor para telas menores */
+        font-size: 18px;
+    }
+
+    .logo img {
+        height: 60px;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #002622;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+    }
+
+    nav ul.active {
+        display: flex;
+        /* Mostrar o menu em forma de dropdown */
+    }
+
+    nav li {
+        text-align: center;
+        padding: 15px 0;
+    }
+
+    .hero-section {
+        width: 80%;
+        margin: 20px auto;
+        /* Centraliza horizontalmente */
+        padding: 10px;
+        gap: 5px;
+    }
+
+    .adopt-button {
+        width: 100%;
+        /* O botão ocupará toda a largura disponível */
+        font-size: 20px;
+        padding: 10px 20px;
+        height: auto;
+        /* Altura ajustada automaticamente */
+    }
+}
+
+/* Telas pequenas (smartphones) */
+@media (max-width: 480px) {
+
+    .logo img {
+        height: 60px;
+    }
+
+    nav ul {
+        width: 100%;
+    }
+
+    nav li {
+        padding: 10px 0;
+    }
+
+    .text-overlay {
+        top: 2%;
+        left: 2%;
+        max-width: 90%;
+    }
+
+    .text-overlay h1 {
+        font-size: 1.5em;
+    }
+
+    .text-overlay p {
+        font-size: 0.9em;
+    }
+
+    .gallery {
+        gap: 100px;
+        margin-top: 100px;
+    }
+
+    .gallery-item {
+        width: 100%;
+
+    }
+
+    .image-button {
+        width: 60%; /* Defina uma largura menor para telas pequenas */
+        font-size: 16px;
+    }
+
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .adopt-button {
+        width: 100%;
+        font-size: 18px;
+        padding: 7px 14px;
+    }
+
+    .hero-section {
+        width: 100%;
+        margin: 10px auto;
+        padding: 10px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .adopt-button {
+        width: 100%;
+        font-size: 18px;
+        padding: 10px 15px;
+        height: auto;
+    }
+}

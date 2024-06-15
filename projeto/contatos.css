@@ -1,0 +1,266 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #002622;
+    color: wheat;
+    box-sizing: border-box;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  /* MENU */
+  
+  header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #002622;
+      position: relative;
+  }
+  
+  
+  .logo img {
+      height: 8vw;
+      min-height: 50px;
+      max-height: 100px;
+      transition: height 0.3s ease;
+  }
+  
+  
+  nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      margin: 0;
+      padding: 0;
+      font-size: 18px;
+  }
+  
+  nav li {
+      padding: 10px 20px;
+  }
+  
+  nav a {
+      text-decoration: none;
+      font-weight: bold;
+      color: wheat;
+  }
+  
+  nav a:hover {
+    color: #c7a78d;
+  }
+  
+  
+  
+  .menu-toggle {
+      display: none;
+      font-size: 24px;
+      background: none;
+      border: none;
+      color: wheat;
+      cursor: pointer;
+  }
+  
+  /* FIM HEADER */
+  
+  /* Estilos do menu de navegação */
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+  }
+  
+  nav li {
+    padding: 10px 20px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    font-weight: bold;
+    color: wheat;
+  }
+  
+  /* Estilos do botão de menu hambúrguer */
+  .menu-toggle {
+      display: none; /* Escondido por padrão */
+      font-size: 24px;
+      background: none;
+      border: none;
+      color: wheat;
+      cursor: pointer;
+  }
+  
+  
+  
+  
+  
+  
+  .capa img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  h1 {
+    text-align: center;
+  
+  }
+  
+  .contact-section {
+    margin: 20px;
+  }
+  
+  .contact-section h1 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    color: wheat;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .contact-item img.contact-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  
+  .contact-item span {
+    font-size: 18px;
+  }
+  
+  .contact-item a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .contact-item a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: wheat;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.8em;
+    margin-top: 80px;
+  }
+  
+  .footer-link {
+    color: wheat;
+    text-decoration: none;
+    margin-left: 15px;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }
+  
+  
+  
+  
+  @media (max-width: 768px) {
+    
+    .menu-toggle {
+      display: block;
+    }
+  
+    header {
+      padding: 10px 15px;
+      align-items: center;
+    }
+  
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: #002622;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+    }
+  
+  
+    nav ul.active {
+      display: flex; /* Mostrar o menu em forma de dropdown */
+      height:100vh;
+    }
+  
+    nav li {
+      text-align: center;
+      padding: 15px 0;
+    }
+  
+    .logo img {
+        height: 60px;
+    }
+  
+    .footer {
+      margin-top: 40px;
+      /* Ajuste para telas menores que 768px */
+    }
+  
+  }
+  
+  @media (max-width: 480px) {
+    .logo img {
+      height: 60px;
+    }
+  
+    .footer {
+      margin-top: 20px;
+      /* Ajuste para telas menores que 480px */
+      font-size: 0.7em;
+      /* Redução do tamanho da fonte para telas menores que 480px */
+    }
+  
+  
+    nav ul {
+      width: 100%;
+      /* O menu dropdown ocupa toda a largura */
+    }
+  
+    nav li {
+      padding: 10px 0;
+    }
+  }
+  
+  @media (max-width: 360px) {
+    .logo img {
+      height: 20vw;
+      min-height: 50px;
+    }
+  
+    nav ul {
+      gap: 10px;
+    }
+  
+    nav li {
+      padding: 5px 0;
+    }
+  
+    .footer {
+      margin-top: 10px;
+      /* Ajuste para telas menores que 360px */
+      font-size: 0.6em;
+      /* Redução adicional do tamanho da fonte para telas menores que 360px */
+    }
+  }
